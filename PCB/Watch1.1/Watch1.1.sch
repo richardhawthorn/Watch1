@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6962,6 +6962,9 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="161.29" y1="57.15" x2="167.64" y2="57.15" width="0.1524" layer="91"/>
 <junction x="161.29" y="57.15"/>
 <label x="165.1" y="57.15" size="1.778" layer="95"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="153.67" y1="50.8" x2="153.67" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="57.15" x2="161.29" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A4_SDA" class="0">
@@ -7189,17 +7192,21 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <junction x="137.16" y="77.47"/>
 </segment>
 </net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB7(XTAL2/TOSC2)"/>
+<wire x1="31.75" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="109.22" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="161.29" y1="71.12" x2="161.29" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="G$1" pin="2"/>
-<wire x1="161.29" y1="74.93" x2="153.67" y2="74.93" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="153.67" y1="74.93" x2="144.78" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="74.93" x2="144.78" y2="74.93" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="74.93" x2="129.54" y2="74.93" width="0.1524" layer="91"/>
-<wire x1="153.67" y1="50.8" x2="153.67" y2="74.93" width="0.1524" layer="91"/>
-<junction x="153.67" y="74.93"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="63.5" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
 <junction x="144.78" y="74.93"/>
@@ -7210,52 +7217,11 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pinref part="U$1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB7(XTAL2/TOSC2)"/>
-<wire x1="31.75" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="109.22" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
 <approved hash="102,1,19.05,162.56,VCC,3.3V,,,,"/>
-<approved hash="102,1,229.87,157.48,VCC,3.3V,,,,"/>
-<approved hash="102,1,229.87,111.76,VCC,3.3V,,,,"/>
-<approved hash="102,1,16.51,71.12,VCC,3.3V,,,,"/>
-<approved hash="102,1,330.2,154.94,VCC,3.3V,,,,"/>
-<approved hash="102,1,289.56,162.56,VCC,3.3V,,,,"/>
-<approved hash="102,1,317.5,162.56,VCC,3.3V,,,,"/>
-<approved hash="102,1,378.46,152.4,VCC,3.3V,,,,"/>
-<approved hash="102,1,276.86,104.14,VCC,3.3V,,,,"/>
-<approved hash="102,1,289.56,58.42,VCC,3.3V,,,,"/>
-<approved hash="102,1,375.92,116.84,VCC,3.3V,,,,"/>
-<approved hash="102,1,373.38,66.04,VCC,3.3V,,,,"/>
-<approved hash="102,1,163.83,116.84,VCC,3.3V,,,,"/>
-<approved hash="102,1,134.62,59.69,VCC,3.3V,,,,"/>
-<approved hash="102,1,269.24,16.51,VCC,3.3V,,,,"/>
-<approved hash="102,1,332.74,20.32,VCC,3.3V,,,,"/>
-<approved hash="102,1,410.21,36.83,VCC,3.3V,,,,"/>
-<approved hash="102,1,342.9,1.27,VCC,3.3V,,,,"/>
-<approved hash="102,1,392.43,-17.78,VCC,3.3V,,,,"/>
-<approved hash="102,1,199.39,-26.67,VCC,3.3V,,,,"/>
-<approved hash="102,1,135.89,-27.94,VCC,3.3V,,,,"/>
-<approved hash="104,1,229.87,153.67,RF2,VCC,3.3V,,,"/>
-<approved hash="104,1,74.93,34.29,U2,VIN,VBUS,,,"/>
-<approved hash="104,1,95.25,29.21,U2,VSS,GND,,,"/>
-<approved hash="104,1,330.2,152.4,U4,V+,3.3V,,,"/>
-<approved hash="104,1,330.2,137.16,U4,V-,GND,,,"/>
-<approved hash="104,1,289.56,101.6,U5,VDD,3.3V,,,"/>
-<approved hash="104,1,172.72,109.22,U8,VDD,3.3V,,,"/>
-<approved hash="104,1,351.79,-3.81,U10,VDD,3.3V,,,"/>
-<approved hash="106,1,80.01,134.62,A6,,,,,"/>
-<approved hash="106,1,322.58,50.8,INT1,,,,,"/>
-<approved hash="106,1,322.58,48.26,INT2,,,,,"/>
-<approved hash="113,1,435.847,49.6612,JP3,,,,,"/>
-<approved hash="113,1,440.927,14.1012,JP5,,,,,"/>
 </errors>
 </schematic>
 </drawing>
